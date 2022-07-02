@@ -1,0 +1,10 @@
+<div>
+  <h1>Informe o CPF do futuro cooperado(a)</h1>
+  <p>Se necessário, você poderá duplicar uma conta existente ou pausar e retomar este cadastro futuramente.</p>
+  <p>Digite apenas os números (sem pontos ou traços).</p>
+  <input type="text" >
+  <button> Consultar por CPF</button>
+  <div *ngIf="hasvalidCPF">
+    <app-card></app-card>
+  </div>
+</div>
