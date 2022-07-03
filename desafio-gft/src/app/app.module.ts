@@ -6,17 +6,20 @@ import { AppComponent } from './app.component';
 import { CardComponent } from './components/card/card.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { AdicionaColaboradorComponent } from './home-page/adiciona-colaborador/adiciona-colaborador.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
     HomePageComponent,
-    AdicionaColaboradorComponent
+    AdicionaColaboradorComponent,
   ],
   imports: [
+    ReactiveFormsModule,
+    FormsModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { ListaCooperados } from './../../mock/mock-cooperados';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
+  @Input()
+    cooperado: ListaCooperados | undefined;
+
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
 
 }

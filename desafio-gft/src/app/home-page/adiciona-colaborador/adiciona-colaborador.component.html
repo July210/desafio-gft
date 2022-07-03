@@ -1,10 +1,24 @@
 <div>
-  <h1>Informe o CPF do futuro cooperado(a)</h1>
-  <p>Se necessário, você poderá duplicar uma conta existente ou pausar e retomar este cadastro futuramente.</p>
-  <p>Digite apenas os números (sem pontos ou traços).</p>
-  <input type="text" >
-  <button> Consultar por CPF</button>
+  <h1>Informe o CPF do futuro cooperado (a)</h1>
+  <p class="sutil">Se necessário, você poderá duplicar uma conta existente ou pausar e retomar este cadastro futuramente.
+  <br>Digite apenas os números (sem pontos ou traços).</p>
+  <div>
+    <form [formGroup]="form">
+      <div>
+        <label for="cpf">CPF:</label>
+        <input type="text" formControlName="cpf" maxlength="11" placeholder="000.000.000-00">
+        <div *ngIf="!cpf!.pristine && cpf!.errors">
+          <p *ngIf="cpf!.errors?.['cpfInvalido'] && consulta">
+            Digite um CPF válido
+          </p>
+        </div>
+        <button
+          (click)="validaCPF()" class="primary"
+        > Consultar por CPF</button>
+      </div>
+    </form>
+  </div>
   <div *ngIf="hasvalidCPF">
-    <app-card></app-card>
+    <app-card [cooperado]="futuroCooperado"></app-card>
   </div>
 </div>

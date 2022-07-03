@@ -10,28 +10,28 @@ export interface ListaCooperados {
 export const mockCooperados: Array<ListaCooperados> = [
   {
     nome: 'Maria Alves Santos',
-    cpf: '111.222.333-44',
+    cpf: '11122233344',
     contaAplicacao: '010203-4',
     contaCorrente: '020304-5',
     situacaoCpf: 'Regular'
   },
   {
     nome: 'Alberto Gomes da Rocha',
-    cpf: '333.222.111-44',
+    cpf: '33322211144',
     contaAplicacao: '010203-4',
     contaCorrente: '020304-5',
     situacaoCpf: 'Irregular'
   },
   {
     nome: 'Rosana Silva Prudente',
-    cpf: '111.333.222-44',
+    cpf: '11133322244',
     contaAplicacao: '010203-4',
     contaCorrente: '020304-5',
     situacaoCpf: 'Irregular'
   },
   {
     nome: 'Sonia Germano de Moraes',
-    cpf: '222.333.111-44',
+    cpf: '22233311144',
     contaAplicacao: '010203-4',
     contaCorrente: '020304-5',
     situacaoCpf: 'Regular'

@@ -1,3 +1,27 @@
 <div class="card">
-  Hello
+  <div class="card-content">
+    <h4>Situação cadastral do CPF</h4>
+    <h5>Consulta na Receita Federal</h5>
+
+    <div>
+      <div class="linha">
+        <div class="icone">
+          <img src="../../../assets/imagens/profile.png"
+            alt="icone-pessoa" class="opacity size-icone centraliza"
+          >
+        </div>
+        <div class="label">Nome</div>
+        <div class="valor">{{ cooperado?.nome }}</div>
+      </div>
+      <div class="linha">
+        <div class="icone">
+          <img src="../../../assets/imagens/check-mark.png"
+            alt="icone-pessoa" class="opacity size-icone centraliza"
+          >
+        </div>
+        <div class="label">Situação do CPF</div>
+        <div class="valor">{{ cooperado?.situacaoCpf }}</div>
+      </div>
+    </div>
+  </div>
 </div>

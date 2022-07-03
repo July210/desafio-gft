@@ -1,5 +1,30 @@
-// Card
-$border: rgba(0,0,0,0.25);
 
-// Botao
+$border: rgb(0 0 0 / 25%);
+$white: white;
 $blue: #165C7D;
+
+.primary {
+  font-family: 'Exo 2', sans-serif;
+  background-color: $blue;
+  border: none;
+  font-weight: 500;
+  color: $white;
+  height: 34px;
+  padding: 5px 16px;
+  border-radius: 2px;
+  margin: 0 10px;
+}
+
+// Icone
+.opacity { filter: opacity(0.5); }
+.size-icone { width: 30px; }
+.centraliza {
+  margin: auto;
+  display: block;
+}
+
+
+
+// Texto
+
+
