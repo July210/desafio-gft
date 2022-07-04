@@ -30,8 +30,11 @@ export class AdicionaColaboradorComponent implements OnInit {
   checkSeTemCpf() {
     if(this.cpf?.value) {
       this.checkCpfNaLista();
+      console.log(this.futuroCooperado)
       if (this.futuroCooperado) {
         this.hasvalidCPF = true;
+      } else {
+        this.form.controls['cpf'].setErrors({'cpfInvalido': true})
       }
     }
   }
