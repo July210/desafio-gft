@@ -7,7 +7,9 @@ $w: white;
 $blue: #165C7D;
 $background: #E8EFF2;
 $criticVermelho: #C13018;
+$cinza2: #C6CED1;
 $cinza3: #A7B0B5;
+$cinza4: #889499;
 $verde: #00C246;
 $azulAilos: #165C7D;
 $logo-color: white;
@@ -18,8 +20,11 @@ body {
   margin: 0;
 }
 
-.primary {
+.font {
   font-family: 'Exo 2', sans-serif;
+}
+
+.primary {
   background-color: $blue;
   border: none;
   font-weight: 500;
@@ -44,7 +49,7 @@ body {
 
 .background {
   background-color: $background;
-  height: 100vh;
+  height: calc(100vh - 100px);
   padding: 20px 20px 0 20px;
   margin-left: 75px;
 }
@@ -89,6 +94,10 @@ label {
   margin-bottom: 0px;
 }
 
+.margin-auto {
+  margin: auto;
+}
+
 .margin-0 {
   margin: 0px;
 }
@@ -97,4 +106,14 @@ label {
   font-weight: 400;
   font-size: 11px;
   color: $cinza3;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.barra-progresso {
+  width: 100%;
+  display: block;
+  height: 70px;
 }

@@ -1,0 +1,48 @@
+@import '../../../styles.scss';
+
+.container {
+  width: 600px;
+  margin: 45px auto;
+  position: sticky;
+}
+.progressbar li {
+  list-style-type: none;
+  width: 25%;
+  float: left;
+  font-size: 13px;
+  position: relative;
+  text-align: center;
+  color: $cinza3;
+}
+.progressbar li:before {
+  width: 15px;
+  height: 15px;
+  content: '';
+  line-height: 30px;
+  border: 2px solid $cinza3;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+  background-color: $cinza3;
+}
+.progressbar li:after {
+  width: 100%;
+  height: 2px;
+  content: '';
+  position: absolute;
+  background-color: $cinza3;
+  top: 8px;
+  left: -50%;
+  z-index: -1;
+}
+.progressbar li:first-child:after {
+  content: none;
+}
+.progressbar li.active {
+  color: $azulAilos;
+}
+.progressbar li.active:before {
+  border-color: $azulAilos;
+  background-color: $background;
+}

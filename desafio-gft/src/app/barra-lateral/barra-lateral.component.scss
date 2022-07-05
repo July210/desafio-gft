@@ -40,6 +40,10 @@ li {
       margin-bottom: 2rem;
       filter: invert(100%);
       cursor: pointer;
+      &.logo {
+        opacity: 1;
+        filter: none;
+      }
       a {
         position: relative;
         justify-content: center;
