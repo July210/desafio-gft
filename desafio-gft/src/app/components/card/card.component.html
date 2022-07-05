@@ -1,7 +1,7 @@
 <div class="card">
   <div class="card-content">
-    <h4 class="margin-b-0">Situação cadastral do CPF</h4>
-    <h5 class="margin-0 subTitle">Consulta na Receita Federal</h5>
+    <h4 class="margin-b-0">{{ info.texto }}</h4>
+    <h5 class="margin-0 subTitle">{{ info.subTexto }}</h5>
 
     <div>
       <div class="linha">
@@ -10,7 +10,7 @@
             alt="icone-pessoa" class="opacity icone centraliza "
           >
         </div>
-        <div class="label subTitle">Nome</div>
+        <div class="label subTitle">{{ info.label1 }}</div>
         <div class="valor">{{ cooperado?.nome }}</div>
       </div>
       <div class="linha">
@@ -19,7 +19,7 @@
             alt="icone-pessoa" class="opacity icone centraliza"
           >
         </div>
-        <div class="label subTitle">Situação do CPF</div>
+        <div class="label subTitle">{{ info.label2 }}</div>
         <div class="valor">{{ cooperado?.situacaoCpf }}</div>
       </div>
     </div>

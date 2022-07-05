@@ -11,6 +11,8 @@ export class CardComponent implements OnInit {
   @Input()
     cooperado: ListaCooperados | undefined;
 
+  @Input()
+    info: any;
 
   constructor() { }
 

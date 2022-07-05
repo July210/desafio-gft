@@ -20,8 +20,8 @@
     </form>
   </div>
   <div *ngIf="hasvalidCPF">
-      <app-card [cooperado]="futuroCooperado"></app-card>
-      <app-card [cooperado]="futuroCooperado"></app-card>
-      <app-card [cooperado]="futuroCooperado"></app-card>
+    <app-card [cooperado]="futuroCooperado" [info]="mockData[0]"></app-card>
+    <app-card [cooperado]="futuroCooperado" [info]="mockData[1]"></app-card>
+    <app-card [cooperado]="futuroCooperado" [info]="mockData[2]"></app-card>
   </div>
 </div>

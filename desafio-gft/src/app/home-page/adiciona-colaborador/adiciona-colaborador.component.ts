@@ -14,6 +14,27 @@ export class AdicionaColaboradorComponent implements OnInit {
   hasvalidCPF = false;
   futuroCooperado: ListaCooperados | undefined;
 
+  mockData = [
+    {
+      texto: 'Situação cadastral do CPF',
+      subTexto: 'Consulta na Receita Federal',
+      label1: 'Nome',
+      label2: 'Situação do CPF',
+    },
+    {
+      texto: 'Conta aplicação',
+      subTexto: 'Cooperativa Viacredi',
+      label1: 'Número da conta',
+      label2: 'Situação do CPF',
+    },
+    {
+      texto: 'Situação cadastral do CPF',
+      subTexto: 'Consulta na Receita Federal',
+      label1: 'Número da conta',
+      label2: 'Duplicar conta',
+    },
+  ]
+
   constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {

@@ -3,7 +3,7 @@
 
 
 $border: rgb(0 0 0 / 25%);
-$white: white;
+$w: white;
 $blue: #165C7D;
 $background: #E8EFF2;
 $criticVermelho: #C13018;
@@ -11,6 +11,7 @@ $cinza3: #A7B0B5;
 
 body {
   font-family: 'Open Sans', sans-serif !important;
+  margin: 0;
 }
 
 .primary {
@@ -18,7 +19,7 @@ body {
   background-color: $blue;
   border: none;
   font-weight: 500;
-  color: $white;
+  color: $w;
   height: 34px;
   padding: 5px 16px;
   border-radius: 2px;
@@ -27,7 +28,7 @@ body {
 }
 
 // Icone
-.opacity { filter: opacity(0.5); }
+.opacity { opacity: 0.5; }
 .icone {
   width: 30px;
   padding: 2px;
@@ -41,6 +42,11 @@ body {
   background-color: $background;
   height: 100vh;
   padding: 20px 20px 0 20px;
+  margin-left: 75px;
+}
+
+ul{
+  padding: 0;
 }
 
 h1 {
