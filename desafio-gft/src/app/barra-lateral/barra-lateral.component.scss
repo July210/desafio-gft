@@ -1,9 +1,5 @@
 @import '../../styles.scss';
 
-$azulAilos: #165C7D;
-$logo-color: white;
-$c-shadow-secondary: hsla(0, 0%, 0%, .26);
-
 a {
   color: inherit;
   text-decoration: none;
@@ -14,34 +10,20 @@ li {
   width: 100%;
 }
 
-.flex-column-nowrap {
+.coluna {
   display: flex;
   flex-flow: column nowrap;
 }
 
-.flex-row-wrap {
+.linha {
   display: flex;
   flex-flow: row wrap;
 }
 
-.flex-row-nowrap {
-  display: flex;
-  flex-flow: row nowrap;
-}
-
-// Specific
-.sidebar__logo,
-.navbar__logo {
-  position: relative;
-  margin-top: .5rem;
-  padding-top: .4rem;
-  z-index: 10;
-}
-
-.desktop-menu {
+.barra-lateral {
   display: flex;
   position: relative;
-  .sidebar {
+  .lateral {
     position: fixed;
     width: 100%;
     max-width: 75px;
@@ -53,8 +35,8 @@ li {
     background-color: $azulAilos;
     box-shadow: 0 2px 5px $c-shadow-secondary;
   }
-  .sidebar__nav-list {
-    .nav-list__item {
+  .barra-lateral-lista {
+    .lista-itens {
       margin-bottom: 2rem;
       filter: invert(100%);
       cursor: pointer;
