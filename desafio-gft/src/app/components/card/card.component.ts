@@ -19,5 +19,24 @@ export class CardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getValor() {
+    switch (this.info.tipo) {
+      case 0: {
+        return this.cooperado?.nome
+      }
+      case 1: {
+        return this.cooperado?.contaAplicacao
+      }
+      case 2: {
+        return this.cooperado?.contaCorrente
+      }
+      default:
+        return '';
+    }
+  }
+
+  duplicaConta() {
+    alert('Conta Duplicada!')
+  }
 
 }

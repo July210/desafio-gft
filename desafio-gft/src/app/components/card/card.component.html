@@ -4,23 +4,31 @@
     <h5 class="margin-0 subTitle">{{ info.subTexto }}</h5>
 
     <div>
-      <div class="linha">
-        <div class="icone">
+      <div class="linha linha-info">
+        <div class="icone-div">
           <img src="../../../assets/imagens/profile.png"
-            alt="icone-pessoa" class="opacity icone centraliza "
-          >
+            alt="icone-pessoa" class="opacity icone"
+            *ngIf="info.tipo === 0">
+          <img src="../../../assets/imagens/credit-card.png"
+            alt="icone-pessoa" class="opacity icone"
+            *ngIf="info.tipo !== 0">
         </div>
         <div class="label subTitle">{{ info.label1 }}</div>
-        <div class="valor">{{ cooperado?.nome }}</div>
+        <div class="valor">
+          {{ getValor() }}
+        </div>
       </div>
-      <div class="linha">
-        <div class="icone">
+      <div class="linha linha-info" *ngIf="info.tipo === 0">
+        <div class="icone-div check" >
           <img src="../../../assets/imagens/check-mark.png"
-            alt="icone-pessoa" class="opacity icone centraliza"
+            alt="icone-check" class="opacity icone"
           >
         </div>
         <div class="label subTitle">{{ info.label2 }}</div>
         <div class="valor">{{ cooperado?.situacaoCpf }}</div>
+      </div>
+      <div class="linha linha-button" *ngIf="info.tipo !== 0">
+        <a class="margin-0" (click)="duplicaConta()">{{ info.label2 }}</a>
       </div>
     </div>
   </div>
