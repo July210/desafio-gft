@@ -19,9 +19,14 @@
         </div>
       </div>
       <div class="linha linha-info" *ngIf="info.tipo === 0">
-        <div class="icone-div check" >
+        <div class="icone-div" >
           <img src="../../../assets/imagens/check-mark.png"
-            alt="icone-check" class="opacity icone"
+            alt="icone-check" class="icone"
+            *ngIf="cooperado?.situacaoCpf === 'Regular'"
+          >
+          <img src="../../../assets/imagens/incorrect.png"
+            alt="icone-check" class="icone"
+            *ngIf="cooperado?.situacaoCpf === 'Irregular'"
           >
         </div>
         <div class="label subTitle">{{ info.label2 }}</div>
