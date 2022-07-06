@@ -1,8 +1,10 @@
+@import '../../../styles.scss';
+
 .barra-inferior {
   position: absolute;
   bottom: 0;
   width: calc(100vw - 75px);
-  background-color: white;
+  background-color: $w;
   margin-left: 75px;
   height: 65px;
 }

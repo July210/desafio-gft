@@ -1,5 +1,7 @@
 # DesafioGft
 
+Foi feito mock dos dados dos novos cooperados, esses dados se encontram na pasta mock.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.
 
 ## Development server
