@@ -6,11 +6,22 @@
     <form [formGroup]="form">
       <div>
         <label for="cpf">CPF</label>
-        <input type="text" formControlName="cpf" maxlength="11"
-          placeholder="000.000.000-00" required >
-        <button type="button"
-          (click)="validaCPF()" class="primary font"
+        <input
+          [ngClass]="{'error' : (cpf!.errors?.['cpfInvalido'] && !cpf?.pristine && cpf?.errors)}"
+          type="text"
+          formControlName="cpf"
+          maxlength="11"
+          placeholder="000.000.000-00"
+          required
+          >
+        <button
+          type="button"
+          class="primary font dark"
+          (click)="validaCPF()"
+          [disabled]="consulta"
+          [ngClass]="{'disabled': consulta}"
         > Consultar por CPF</button>
+
         <div *ngIf="!cpf?.pristine && cpf?.errors">
           <div *ngIf="cpf!.errors?.['cpfInvalido']" class="erro">
             Informe um CPF válido

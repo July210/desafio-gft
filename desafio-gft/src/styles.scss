@@ -12,6 +12,7 @@ $cinza3: #A7B0B5;
 $cinza4: #889499;
 $verde: #00C246;
 $azulAilos: #165C7D;
+$azulAilos40: #A2BECB;
 $logo-color: white;
 $c-shadow-secondary: hsla(0, 0%, 0%, .26);
 
@@ -25,17 +26,31 @@ body {
 }
 
 .primary {
-  background-color: $blue;
   border: none;
   font-weight: 500;
-  color: $w;
   height: 34px;
   padding: 5px 16px;
   border-radius: 2px;
   margin: 0 10px;
   cursor: pointer;
+
 }
 
+.dark {
+  background-color: $blue;
+  color: $w;
+}
+
+.light {
+  background-color: white;
+  color: #165C7D;
+  border: 1px solid #165C7D;
+}
+
+.error {
+  border-color: $criticVermelho;
+  border-style: solid;
+}
 // Icone
 .opacity { opacity: 0.5; }
 .icone {
@@ -52,6 +67,10 @@ body {
   height: calc(100vh - 100px);
   padding: 20px 20px 0 20px;
   margin-left: 75px;
+}
+.disabled {
+  background-color: $azulAilos40;
+  cursor: default;
 }
 
 ul{
@@ -100,6 +119,10 @@ label {
 
 .margin-0 {
   margin: 0px;
+}
+
+.margin-15 {
+  margin: 15px;
 }
 
 .subTitle{

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home-page',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
 
+  botaoAdmissao = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  cpfValido(event: any) {
+    this.botaoAdmissao = event;
   }
 
 }

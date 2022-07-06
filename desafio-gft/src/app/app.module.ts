@@ -10,6 +10,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BarraLateralComponent } from './barra-lateral/barra-lateral.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { BarraSuperiorComponent } from './components/barra-superior/barra-superior.component';
+import { BarraInferiorComponent } from './components/barra-inferior/barra-inferior.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { BarraSuperiorComponent } from './components/barra-superior/barra-superi
     BarraLateralComponent,
     ProgressBarComponent,
     BarraSuperiorComponent,
+    BarraInferiorComponent,
   ],
   imports: [
     ReactiveFormsModule,
